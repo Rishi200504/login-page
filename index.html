@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .rish {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(image.png);
+            background-size: cover;
+            height: 100dvh;
+        }
+
+        .total {
+            padding: 0px 70px;
+            border-radius: 15px;
+
+        }
+
+        .total {
+            width: 240px;
+            height: 360px;
+            background: rgba(255, 255, 255, 0.13);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.5),
+                inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+                inset 0 0 4px 2px rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .total::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.8),
+                    transparent);
+        }
+
+        .total::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1px;
+            height: 100%;
+            background: linear-gradient(180deg,
+                    rgba(255, 255, 255, 0.8),
+                    transparent,
+                    rgba(255, 255, 255, 0.3));
+        }
+
+        .head {
+            text-shadow: 0px 0px 4px white;
+            font-size: 30px;
+            text-align: center;
+            color: black;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .sub {
+            box-shadow: 0px 0px 4px whitesmoke;
+            background-color: rgb(59, 138, 59);
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 15px;
+            padding: 8px 15px;
+            margin:20px ;
+            border: 2px solid rgb(6, 51, 6);
+            
+
+        }
+
+        .re {
+            box-shadow: 0px 0px 4px whitesmoke;
+            background-color: rgb(196, 94, 111);
+            cursor: pointer;
+            border-radius: 20px;
+            margin: 20px;
+            font-size: 15px;
+            padding: 8px 15px;
+             border: 2px solid rgb(125, 22, 39);
+        }
+
+        .mail {
+            border-radius: 20px;
+            width: 200px;
+            margin: 8px;
+            font-size: 15px;
+            box-shadow: 0px 0px 4px white;
+            padding: 5px 20px;  
+            border: 3px solid black;
+
+
+        }
+
+        .pass {
+            border-radius: 20px;
+            width: 200px;
+            margin: 8px;
+            font-size: 15px;
+            box-shadow: 0px 0px 4px white;
+            padding: 5px 20px; 
+            border: 3px solid black;
+            ;
+        }
+        .ans{
+          
+          display: flex;
+          justify-content: space-between;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="rish">
+        <div class="total">
+            <h1 class="head">Login</h1>
+            <div class="info">
+                <input type="mail" , id="mail" placeholder="Enter your email" class="mail">
+                <input type="pass" id="pass" placeholder="Enter your password" class="pass">
+             </div>  
+             <div class="ans"> 
+                <input type="Submit" class="sub">
+                <input type="Reset" class="re">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
